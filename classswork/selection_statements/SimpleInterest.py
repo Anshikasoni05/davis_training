@@ -1,18 +1,33 @@
-# Program to calculate Simple Interest and validate input
+# Program to calculate Simple Interest
+# This program takes Principal, Rate, and Time as input
+# It validates the data to ensure the user enters positive numbers
 
-# Taking input from user
-principal = float(input("Enter Principal Amount: "))
-rate = float(input("Enter Rate of Interest: "))
-time = float(input("Enter Time (in years): "))
+# Taking principal amount input
+principal = float(input("Enter the principal amount: "))
 
-# Validation using if-else
-if principal <= 0 or rate <= 0 or time <= 0:
-    print("Invalid Input! Principal, Rate and Time must be positive values.")
+# Validate principal amount
+if principal <= 0:
+    print("Principal amount must be greater than 0.")
 else:
-    # Simple Interest Formula
-    simple_interest = (principal * rate * time) / 100
     
-    print("Principal Amount:", principal)
-    print("Rate of Interest:", rate)
-    print("Time:", time)
-    print("Simple Interest =", simple_interest)
+    # Taking rate of interest input
+    rate = float(input("Enter the rate of interest (in %): "))
+    
+    # Validate rate
+    if rate <= 0:
+        print("Rate of interest must be greater than 0.")
+    else:
+        
+        # Taking time input
+        time = float(input("Enter the time (in years): "))
+        
+        # Validate time
+        if time <= 0:
+            print("Time must be greater than 0.")
+        else:
+            
+            # Formula for Simple Interest
+            simple_interest = (principal * rate * time) / 100
+            
+            # Display result
+            print("Simple Interest =", simple_interest)
