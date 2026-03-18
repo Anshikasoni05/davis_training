@@ -1,4 +1,4 @@
-# Method 4: Different discount slabs
+# Method 5: Different discount slabs
 # program to calculate final bill after discount using function with multiple conditions
 
 def calculate_bill(price, discount):

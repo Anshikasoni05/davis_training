@@ -1,4 +1,4 @@
-# Method 3: If discount is 0
+# Method 4: If discount is 0
 #Program to calculate final bill after discount
 
 def calculate_bill(price, discount):
