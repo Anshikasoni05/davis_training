@@ -1,4 +1,4 @@
-# Method 8: Ask user if discount should be applied
+# Method 7: Ask user if discount should be applied
 #Program to calculate final bill after discount
 def calculate_bill(price, discount, apply_discount):
     if apply_discount == "yes":
