@@ -1,14 +1,13 @@
-# Method 1: Simple function
+# Method 2: Validate inputs
 
 def calculate_si(p, r, t):
-    # Apply SI formula
-    si = (p * r * t) / 100
-    return si
+    if p < 0 or r < 0 or t < 0:
+        return "Invalid input"
+    else:
+        return (p * r * t) / 100
 
-# Input
 p = float(input("Enter Principal: "))
 r = float(input("Enter Rate: "))
 t = float(input("Enter Time: "))
 
-# Output
 print("Simple Interest:", calculate_si(p, r, t))
